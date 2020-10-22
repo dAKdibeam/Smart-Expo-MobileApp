@@ -69,6 +69,7 @@ class _SignupPageState extends State<SignupPage> {
                       SizedBox(height: 50.0),
                       Container(
                           height: 40.0,
+                          width: 120.0,
                           child: Material(
                             borderRadius: BorderRadius.circular(20.0),
                             shadowColor: Colors.greenAccent,
@@ -90,6 +91,7 @@ class _SignupPageState extends State<SignupPage> {
                       SizedBox(height: 20.0),
                       Container(
                         height: 40.0,
+                        width: 120.0,
                         color: Colors.transparent,
                         child: Container(
                           decoration: BoxDecoration(

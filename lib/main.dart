@@ -94,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     SizedBox(height: 20.0),
                     Container(
                       height: 40.0,
+                      width: 120.0,
                       child: Material(
                         borderRadius: BorderRadius.circular(20.0),
                         shadowColor: Colors.greenAccent,
@@ -118,6 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     SizedBox(height: 20.0),
                     Container(
                       height: 40.0,
+                      width: 120.0,
                       color: Colors.transparent,
                       child: Container(
                         decoration: BoxDecoration(
@@ -136,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             SizedBox(width: 12.0),
                             Center(
-                              child: Text('Log in with facebook',
+                              child: Text('facebook',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontFamily: 'Montserrat')),
