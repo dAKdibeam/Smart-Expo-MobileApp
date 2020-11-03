@@ -30,7 +30,7 @@ class _SignupPageState extends State<SignupPage> {
   }
 
   void _showPicker(BuildContext context) {
-    showModalBottomSheet(
+    showModalBottomSheet<void>(
         context: context,
         builder: (BuildContext bc) {
           return SafeArea(
@@ -70,6 +70,7 @@ class _SignupPageState extends State<SignupPage> {
                 child: Stack(
                   children: <Widget>[
                     Container(
+                      //alignment: FractionalOffset.center,
                       padding: EdgeInsets.fromLTRB(15.0, 50.0, 0.0, 0.0),
                       child: Text(
                         'Signup',
@@ -84,7 +85,8 @@ class _SignupPageState extends State<SignupPage> {
                 height: 32,
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(140.0, 0.0, 0.0, 0.0),
+                alignment: FractionalOffset.center,
+                //padding: EdgeInsets.fromLTRB(140.0, 0.0, 0.0, 0.0),
                 child: GestureDetector(
                   onTap: () {
                     _showPicker(context);

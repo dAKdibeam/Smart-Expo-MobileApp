@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -7,7 +8,7 @@ class HomeBackgroundColor extends AnimatedWidget {
   final Animation<double> opacity;
   HomeBackgroundColor(this.opacity) : super(listenable: opacity);
 
-  Animation<double> get progress => listenable;
+  Animation<double> get progress => opacity; //listenable before
   @override
   Widget build(BuildContext context) {
     return Container(
