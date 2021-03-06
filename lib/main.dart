@@ -27,8 +27,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        resizeToAvoidBottomPadding: false,
+    final scaffold = new Scaffold(
+        resizeToAvoidBottomInset: true,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -175,5 +175,6 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ));
+    return scaffold;
   }
 }

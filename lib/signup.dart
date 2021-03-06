@@ -62,7 +62,7 @@ class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: true,
         body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[

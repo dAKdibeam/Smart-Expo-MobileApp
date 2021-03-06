@@ -28,7 +28,7 @@ class _MainPageState extends State<Mainpage> with TickerProviderStateMixin {
 
   void viewEventDetail(Event event) {
     Navigator.of(context).push(
-      PageRouteBuilder(
+      PageRouteBuilder<void>(
         opaque: false,
         barrierDismissible: true,
         transitionDuration: Duration(milliseconds: 300),
